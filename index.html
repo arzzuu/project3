@@ -9,31 +9,29 @@
 <body>
     <main>
         <header>
+            <div class="dropdown">
+                <button class="dropbtn"><img src="menu.png" class="menuIcon"></button>
+                <div class="dropdown-content">
+                  <a href="#">БАНК</a>
+                  <a href="#">БИЗНЕС</a>
+                  <a href="#">ИНВЕСТИЦИИ</a>
+                  <a href="#">СТРАХОВАНИЕ</a>
+                  <a href="#">MOBILE</a>
+                  <a href="#">ПУТЕШЕСТВИЯ</a>
+                  <a href="#">РАЗВЛЕЧЕНИЯ 3</a>
+                </div>
+            </div>
             <div>
-                <img src="bank.svg" alt="bank icon">
+                <img src="bank.svg" class="icon" alt="bank icon">
             </div>
             <div id="menu">
-                <div>
                     <p style="color: black">БАНК</p>  
-                </div>
-                <div>
                     <p>БИЗНЕС</p>
-                </div>
-                <div>
                     <p>ИНВЕСТИЦИИ</p>
-                </div>
-                <div>
                     <p>СТРАХОВАНИЕ</p>
-                </div>
-                <div>
                     <p>MOBILE</p>
-                </div>
-                <div>
                     <p>ПУТЕШЕСТВИЯ</p>
-                </div>
-                <div>
                     <p>РАЗВЛЕЧЕНИЯ</p>
-                </div>
             </div>
             <div class="sign-in">
                 <button id="sign">ВОЙТИ</button>
@@ -44,20 +42,22 @@
         <div><h2>Конвертер валют онлайн</h2></div>
         <div id="conventer-blocks">
             <div id="first-container">
+                <p>У меня есть</p>
                 <div id="valuti">
-                    <div id="val rub"><p>RUB</p></div>
-                    <div id="val usd"><p>USD</p></div>
-                    <div id="val tr"><p>TR</p></div>
-                    <div id="val gbp"><p>GBP</p></div>
+                    <button class="val rub1">RUB</button>
+                    <button class="val usd1">USD</button>
+                    <button class="val tr1">TR</button>
+                    <button class="val gbp1">GBP</button>
                 </div>
                 <div id="first-converter-block"><input type="number" id="enter"></div>
             </div>
             <div id="second-container">
+                <p>Хочу приобрести</p>
                 <div id="valuti">
-                    <div id="val rub1"><p>RUB</p></div>
-                    <div id="val usd2"><p>USD</p></div>
-                    <div id="val tr2"><p>TR</p></div>
-                    <div id="val gbp2"><p>GBP</p></div>
+                    <button class="val rub2">RUB</button>
+                    <button class="val usd2">USD</button>
+                    <button class="val tr2">TR</button>
+                    <button class="val gbp2">GBP</button>
                 </div>
                 <div id="second-converter-block"><input type="number" id="enter"></div>
             </div>

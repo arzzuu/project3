@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-header{
+body{
+    font-family: 'Roboto';
     width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+/* html {
+    width: 100vw;
+    height: 100vh;
+} */
+header{
+    width: 109vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #E5E5E5;
-    /* margin-right: 500px ; */
 }
 #menu{
     display: flex;
     flex-direction: row;
 }
 header p{
-    font-family: Roboto;
     font-weight: 500;
     font-size: 11px;
     color: #959BA4;
     margin-left: 20px;
 }
 #sign{
-    font-family: 'Roboto';
     font-size: 11px;
     background-color: white;
     font-weight: 500;
@@ -35,24 +41,122 @@ section{
     flex-direction: column;
     align-items: center;
 }
-#conventer-blocks{
-font-family: 'Roboto';
-/* color: #FFFFFF; */
-font-size: 12px;
+input {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 260px;
+    height: 105px;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    outline: 0;
 }
 section h2{
-    font-family: 'Roboto';
     font-size: 36px;
     font-weight: 700;
 }
 #conventer-blocks{
+    font-size: 12px;
     display: flex;
     /* justify-content: center; */
 }
 #valuti{
     display: flex;
     flex-direction: row;
+    /* justify-content: space-between; */
 }
-#val{
+.val{
+    cursor: pointer;
+    width: 65px;
+    height: 28px;
     border: 1px solid #E5E5E5;
+    background: none;
+    margin-left: 1px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+.rub1, .rub2{
+ border-radius: 3px 0px 0px 3px;
+}
+.gbp1, .gbp2{
+ border-radius: 0px 3px 3px 0px;
+}
+#first-container{
+    margin-right: 100px;
+}
+.menuIcon{
+    width: 20px;
+    height: 20px;
+}
+.dropbtn {
+    background-color: #833AE0;
+    border: none;
+}
+.dropdown {
+    display: none;
+    position: relative;
+}
+.dropdown-content {
+    font-size: 9px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+@media screen and (max-width: 850px) {
+    header p{
+        font-weight: 500;
+        font-size: 9px;
+    }
+    #sign{
+        font-size: 9px;
+        padding: 5px;
+    }
+    section h2{
+        font-size: 30px;
+    }
+    .icon{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+@media screen and (max-width: 776px) {
+    #menu{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    section h2{
+        font-size: 25px;
+    }
+
+}
+@media screen and (max-width: 678px) {
+    section h2{
+        font-size: 20px;
+    }
+    .dropdown{
+        display: block;
+    }
+    #conventer-blocks{
+       flex-direction: column;
+       margin-left: 100px
+    }
+    #first-container{
+        margin-bottom: 55px;
+    }
+    input{
+        font-size: 16px;
+    }
 }
