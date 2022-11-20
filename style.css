@@ -6,12 +6,8 @@ body{
     margin: 0px;
     padding: 0px;
 }
-/* html {
-    width: 100vw;
-    height: 100vh;
-} */
 header{
-    width: 109vw;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,6 +40,7 @@ section{
 input {
     font-size: 24px;
     font-weight: 700;
+    padding-left: 10px;
     margin-top: 20px;
     width: 260px;
     height: 105px;
@@ -122,7 +119,7 @@ section h2{
         padding: 5px;
     }
     section h2{
-        font-size: 30px;
+        font-size: 32px;
     }
     .icon{
         width: 100%;
@@ -138,13 +135,13 @@ section h2{
         display: block;
     }
     section h2{
-        font-size: 25px;
+        font-size: 29px;
     }
 
 }
 @media screen and (max-width: 678px) {
     section h2{
-        font-size: 20px;
+        font-size: 26px;
     }
     .dropdown{
         display: block;
@@ -154,9 +151,18 @@ section h2{
        margin-left: 100px
     }
     #first-container{
-        margin-bottom: 55px;
+        margin-bottom: 20px;
     }
     input{
         font-size: 16px;
+    }
+    section{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 678px) {
+    header{
+        width: 115vw;
     }
 }

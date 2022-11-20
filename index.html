@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="./script.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Converter</title>
-</head>
-<body>
-    <main>
+ </head>
+ <body>
         <header>
             <div class="dropdown">
                 <button class="dropbtn"><img src="menu.png" class="menuIcon"></button>
@@ -18,7 +19,7 @@
                   <a href="#">СТРАХОВАНИЕ</a>
                   <a href="#">MOBILE</a>
                   <a href="#">ПУТЕШЕСТВИЯ</a>
-                  <a href="#">РАЗВЛЕЧЕНИЯ 3</a>
+                  <a href="#">РАЗВЛЕЧЕНИЯ</a>
                 </div>
             </div>
             <div>
@@ -37,9 +38,8 @@
                 <button id="sign">ВОЙТИ</button>
             </div>
         </header>
-    </main>
-    <section>
-        <div><h2>Конвертер валют онлайн</h2></div>
+     <section>
+        <h2>Конвертер валют онлайн</h2>
         <div id="conventer-blocks">
             <div id="first-container">
                 <p>У меня есть</p>
@@ -49,7 +49,7 @@
                     <button class="val tr1">TR</button>
                     <button class="val gbp1">GBP</button>
                 </div>
-                <div id="first-converter-block"><input type="number" id="enter"></div>
+                <div id="first-converter-block"><input type="text" id="enter"></div>
             </div>
             <div id="second-container">
                 <p>Хочу приобрести</p>
@@ -59,9 +59,9 @@
                     <button class="val tr2">TR</button>
                     <button class="val gbp2">GBP</button>
                 </div>
-                <div id="second-converter-block"><input type="number" id="enter"></div>
+                <div id="second-converter-block"><input type="text" id="enter"></div>
             </div>
         </div>
-    </section>
-</body>
+     </section>
+  </body>
 </html>
