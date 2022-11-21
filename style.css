@@ -55,12 +55,10 @@ section h2{
 #conventer-blocks{
     font-size: 12px;
     display: flex;
-    /* justify-content: center; */
 }
 #valuti{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
 }
 .val{
     cursor: pointer;
@@ -137,7 +135,6 @@ section h2{
     section h2{
         font-size: 29px;
     }
-
 }
 @media screen and (max-width: 678px) {
     section h2{
