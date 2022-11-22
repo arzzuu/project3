@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
  <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet" type="text/css">
-    <script src="./script.js" type="module"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./script.js" defer></script>
     <title>Converter</title>
  </head>
  <body>
@@ -13,8 +13,8 @@
             <div class="dropdown">
                 <button class="dropbtn"><img src="menu.png" class="menuIcon"></button>
                 <div class="dropdown-content">
-                  <a href="#">БАНК</a>
-                  <a href="#">БИЗНЕС</a>
+                    <a href="#">БАНК</a>
+                    <a href="#">БИЗНЕС</a>
                   <a href="#">ИНВЕСТИЦИИ</a>
                   <a href="#">СТРАХОВАНИЕ</a>
                   <a href="#">MOBILE</a>
@@ -26,13 +26,13 @@
                 <img src="bank.svg" class="icon" alt="bank icon">
             </div>
             <div id="menu">
-                    <p style="color: black">БАНК</p>  
-                    <p>БИЗНЕС</p>
-                    <p>ИНВЕСТИЦИИ</p>
-                    <p>СТРАХОВАНИЕ</p>
-                    <p>MOBILE</p>
-                    <p>ПУТЕШЕСТВИЯ</p>
-                    <p>РАЗВЛЕЧЕНИЯ</p>
+                  <a href="#" style="color: black">БАНК</a>
+                  <a href="#">БИЗНЕС</a>
+                  <a href="#">ИНВЕСТИЦИИ</a>
+                  <a href="#">СТРАХОВАНИЕ</a>
+                  <a href="#">MOBILE</a>
+                  <a href="#">ПУТЕШЕСТВИЯ</a>
+                  <a href="#">РАЗВЛЕЧЕНИЯ</a>
             </div>
             <div class="sign-in">
                 <button id="sign">ВОЙТИ</button>
@@ -43,31 +43,31 @@
         <div id="conventer-blocks">
             <div id="first-container">
                 <p>У меня есть</p>
-                <div id="valuti">
-                    <button class="val rub1 block1">RUB</button>
-                    <button class="val usd1 block1">USD</button>
-                    <button class="val tr1 block1">TR</button>
-                    <button class="val gbp1 block1">GBP</button>
-                </div>
+                <select class="currencies1" multiple id="sel">
+                    <option class="rub1" value="RUB" selected>RUB</option>
+                    <option value="USD">USD</option>
+                    <option value="AZN">MANAT</option>
+                    <option class="gbp1" value="TRY">TRY</option>
+                </select>
                 <div id="first-converter-block">
-                    <input type="text" id="enter">
-                    <p></p>
+                    <input type="text" id="in1" class="amount1">
+                    <p class="firstDiv"></p>
                 </div>
             </div>
             <div id="second-container">
                 <p>Хочу приобрести</p>
-                <div id="valuti">
-                    <button class="val rub2 block2">RUB</button>
-                    <button class="val usd2 block2">USD</button>
-                    <button class="val tr2 block2">TR</button>
-                    <button class="val gbp2 block2">GBP</button>
-                </div>
+                <select class ="currencies2" multiple id="sel1">
+                    <option class="rub2" value="RUB">RUB</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="AZN">MANAT</option>
+                    <option class="gbp2" value="TRY">TRY</option>
+                </select>
                 <div id="second-converter-block">
-                    <input type="text" id="enter">
-                    <p></p>
+                    <input type="text" id="in2" class="amount2">
+                    <p class="secondDiv"></p>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
   </body>
 </html>

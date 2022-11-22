@@ -8,6 +8,7 @@ body{
 }
 header{
     width: 100vw;
+    padding: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -17,7 +18,8 @@ header{
     display: flex;
     flex-direction: row;
 }
-header p{
+header a{
+    text-decoration: none;
     font-weight: 500;
     font-size: 11px;
     color: #959BA4;
@@ -61,18 +63,17 @@ section h2{
     font-size: 12px;
     display: flex;
 }
-#valuti{
-    display: flex;
-    flex-direction: row;
-}
-.val{
+option{
+    display: inline-block;
     cursor: pointer;
     width: 65px;
     height: 28px;
     border: 1px solid #E5E5E5;
     background: none;
+    text-align: center;
+    margin: 0px;
     margin-left: 1px;
-    padding: 0px;
+    padding: 8px 0px 0px 0px;
     font-family: 'Roboto';
 }
 .rub1, .rub2{
@@ -112,6 +113,28 @@ section h2{
 }
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
+
+select:focus{
+    outline: none;
+}
+select{
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    height: 44px;
+    border: none;
+    overflow: hidden;
+}
+.firstDiv, .secondDiv {
+    margin-top: 10px;
+    margin-left: 7px;
+    padding: 0px;
+    color: #C6C6C6;
+}
+option:checked { 
+    background-color: #833AE0; 
+    color: white;
+}
 @media screen and (max-width: 850px) {
     header p{
         font-weight: 500;
@@ -155,7 +178,7 @@ section h2{
         margin-bottom: 20px;
     }
     input{
-        font-size: 16px;
+        font-size: 20px;
     }
     section{
         margin-top: 20px;
