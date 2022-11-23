@@ -72,15 +72,15 @@ option{
     background: none;
     text-align: center;
     margin: 0px;
-    margin-left: 1px;
+    /* margin-right: 0px; */
     padding: 8px 0px 0px 0px;
     font-family: 'Roboto';
 }
 .rub1, .rub2{
- border-radius: 3px 0px 0px 3px;
+ border-radius: 4px 0px 0px 4px;
 }
 .gbp1, .gbp2{
- border-radius: 0px 3px 3px 0px;
+ border-radius: 0px 4px 4px 0px;
 }
 #first-container{
     margin-right: 100px;
@@ -126,8 +126,8 @@ select{
     overflow: hidden;
 }
 .firstDiv, .secondDiv {
-    margin-top: 10px;
-    margin-left: 7px;
+    margin-top: 15px;
+    margin-left: 4px;
     padding: 0px;
     color: #C6C6C6;
 }
@@ -145,7 +145,7 @@ option:checked {
         padding: 5px;
     }
     section h2{
-        font-size: 32px;
+        font-size: 34px;
     }
     .icon{
         width: 100%;
@@ -160,7 +160,13 @@ option:checked {
         display: block;
     }
     section h2{
-        font-size: 29px;
+        font-size: 31px;
+    }
+    #first-container p{
+        font-size: 14px;
+    }
+    #second-container p{
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 678px) {
@@ -188,5 +194,12 @@ option:checked {
 @media screen and (max-width: 678px) {
     header{
         width: 115vw;
+    }
+    section{
+        margin-bottom: 15px;
+    }
+    section h2{
+        font-size: 28px;
+        margin-left: 20px;
     }
 }
